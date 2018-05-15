@@ -40,7 +40,6 @@ namespace IIS.MyTestApplicationEmber
         public virtual ICSSoft.STORMNET.DataObject[] OnUpdateComputer(IIS.MyTestApplicationEmber.Computer UpdatedObject)
         {
             //  *** Start programmer edit section *** (OnUpdateComputer)
-
             return new ICSSoft.STORMNET.DataObject[0];
             //  *** End programmer edit section *** (OnUpdateComputer)
         }

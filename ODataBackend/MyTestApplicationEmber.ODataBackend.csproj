@@ -44,6 +44,47 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>System.Data</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>System.Core</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>System.Web</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <HintPath>System.Web.Extensions</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>System.Net.Http</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>System.Xml.Linq</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>System.Drawing</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>System.Xml</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>System.Configuration</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>System.EnterpriseServices</HintPath>
+    </Reference>
+    <ProjectReference Include="../Objects/MyTestApplicationEmber.Objects.csproj">
+      <Project>{125f21c9-6815-43f2-b2af-7740c6ee229c}</Project>
+      <Name>MyTestApplicationEmber.Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="../BusinessServers/MyTestApplicationEmber.BusinessServers.csproj">
+      <Project>{2aeb5dad-1972-4278-a24f-111f6802eb5e}</Project>
+      <Name>MyTestApplicationEmber.BusinessServers</Name>
+    </ProjectReference>
     <Reference Include="../packages/CommonServiceLocator.1.0/lib/NET35/Microsoft.Practices.ServiceLocation">
       <HintPath>../packages/CommonServiceLocator.1.0/lib/NET35/Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
@@ -55,6 +96,12 @@
     </Reference>
     <Reference Include="../packages/Unity.Interception.2.1.505.0/lib/NET35/Microsoft.Practices.Unity.Interception">
       <HintPath>../packages/Unity.Interception.2.1.505.0/lib/NET35/Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity.Configuration">
+      <HintPath>../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity">
+      <HintPath>../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
     <Reference Include="../packages/EnterpriseLibrary.Data.5.0.505.0/lib/NET35/Microsoft.Practices.EnterpriseLibrary.Data">
       <HintPath>../packages/EnterpriseLibrary.Data.5.0.505.0/lib/NET35/Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
@@ -89,11 +136,11 @@
     <Reference Include="../packages/Microsoft.Net.Http.2.2.22/lib/net45/System.Net.Http.Extensions">
       <HintPath>../packages/Microsoft.Net.Http.2.2.22/lib/net45/System.Net.Http.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="../packages/Microsoft.AspNet.WebApi.Cors.5.2.3/lib/net45/System.Web.Http.Cors">
-      <HintPath>../packages/Microsoft.AspNet.WebApi.Cors.5.2.3/lib/net45/System.Web.Http.Cors.dll</HintPath>
+    <Reference Include="../packages/Microsoft.Spatial.6.15.0/lib/portable-net45+win+wpa81/Microsoft.Spatial">
+      <HintPath>../packages/Microsoft.Spatial.6.15.0/lib/portable-net45+win+wpa81/Microsoft.Spatial.dll</HintPath>
     </Reference>
-    <Reference Include="../packages/Microsoft.AspNet.WebApi.WebHost.5.2.3/lib/net45/System.Web.Http.WebHost">
-      <HintPath>../packages/Microsoft.AspNet.WebApi.WebHost.5.2.3/lib/net45/System.Web.Http.WebHost.dll</HintPath>
+    <Reference Include="../packages/Microsoft.OData.Edm.6.15.0/lib/portable-net45+win+wpa81/Microsoft.OData.Edm">
+      <HintPath>../packages/Microsoft.OData.Edm.6.15.0/lib/portable-net45+win+wpa81/Microsoft.OData.Edm.dll</HintPath>
     </Reference>
     <Reference Include="../packages/Microsoft.Bcl.1.1.9/lib/net40/System.IO">
       <HintPath>../packages/Microsoft.Bcl.1.1.9/lib/net40/System.IO.dll</HintPath>
@@ -104,11 +151,11 @@
     <Reference Include="../packages/Microsoft.Bcl.1.1.9/lib/net40/System.Threading.Tasks">
       <HintPath>../packages/Microsoft.Bcl.1.1.9/lib/net40/System.Threading.Tasks.dll</HintPath>
     </Reference>
-    <Reference Include="../packages/Microsoft.Spatial.6.15.0/lib/portable-net45+win+wpa81/Microsoft.Spatial">
-      <HintPath>../packages/Microsoft.Spatial.6.15.0/lib/portable-net45+win+wpa81/Microsoft.Spatial.dll</HintPath>
+    <Reference Include="../packages/Microsoft.AspNet.WebApi.Cors.5.2.3/lib/net45/System.Web.Http.Cors">
+      <HintPath>../packages/Microsoft.AspNet.WebApi.Cors.5.2.3/lib/net45/System.Web.Http.Cors.dll</HintPath>
     </Reference>
-    <Reference Include="../packages/Microsoft.OData.Edm.6.15.0/lib/portable-net45+win+wpa81/Microsoft.OData.Edm">
-      <HintPath>../packages/Microsoft.OData.Edm.6.15.0/lib/portable-net45+win+wpa81/Microsoft.OData.Edm.dll</HintPath>
+    <Reference Include="../packages/Microsoft.AspNet.WebApi.WebHost.5.2.3/lib/net45/System.Web.Http.WebHost">
+      <HintPath>../packages/Microsoft.AspNet.WebApi.WebHost.5.2.3/lib/net45/System.Web.Http.WebHost.dll</HintPath>
     </Reference>
     <Reference Include="../packages/NewPlatform.Flexberry.AspNet.WebApi.Cors.1.1.1/lib/net45/NewPlatform.Flexberry.AspNet.WebApi.Cors">
       <HintPath>../packages/NewPlatform.Flexberry.AspNet.WebApi.Cors.1.1.1/lib/net45/NewPlatform.Flexberry.AspNet.WebApi.Cors.dll</HintPath>
@@ -170,18 +217,6 @@
     <Reference Include="../packages/NewPlatform.Flexberry.LogService.1.1.0/lib/net45/LogService">
       <HintPath>../packages/NewPlatform.Flexberry.LogService.1.1.0/lib/net45/LogService.dll</HintPath>
     </Reference>
-    <Reference Include="../packages/log4net.2.0.3/lib/net40-client/log4net">
-      <HintPath>../packages/log4net.2.0.3/lib/net40-client/log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(Objects)">
-      <HintPath>../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(Objects).dll</HintPath>
-    </Reference>
-    <Reference Include="../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging.MsEntLib">
-      <HintPath>../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging.MsEntLib.dll</HintPath>
-    </Reference>
-    <Reference Include="../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(BusinessServers)">
-      <HintPath>../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(BusinessServers).dll</HintPath>
-    </Reference>
     <Reference Include="../packages/Npgsql.2.2.7/lib/net45/Mono.Security">
       <HintPath>../packages/Npgsql.2.2.7/lib/net45/Mono.Security.dll</HintPath>
     </Reference>
@@ -194,14 +229,20 @@
     <Reference Include="../packages/SharpZipLib.0.86.0/lib/20/ICSharpCode.SharpZipLib">
       <HintPath>../packages/SharpZipLib.0.86.0/lib/20/ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity.Configuration">
-      <HintPath>../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity">
-      <HintPath>../packages/Unity.2.1.505.2/lib/NET35/Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="../packages/Oracle.ManagedDataAccess.12.1.022/lib/net40/Oracle.ManagedDataAccess">
       <HintPath>../packages/Oracle.ManagedDataAccess.12.1.022/lib/net40/Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/log4net.2.0.3/lib/net40-client/log4net">
+      <HintPath>../packages/log4net.2.0.3/lib/net40-client/log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(Objects)">
+      <HintPath>../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(Objects).dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging.MsEntLib">
+      <HintPath>../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging.MsEntLib.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(BusinessServers)">
+      <HintPath>../packages/NewPlatform.Flexberry.LogService.Objects.2.0.0/lib/net35/IIS.Caseberry.Logging(BusinessServers).dll</HintPath>
     </Reference>
     <Reference Include="../packages/NewPlatform.Flexberry.ORM.ODataService.4.1.0/lib/net45/NewPlatform.Flexberry.ORM.ODataService">
       <HintPath>../packages/NewPlatform.Flexberry.ORM.ODataService.4.1.0/lib/net45/NewPlatform.Flexberry.ORM.ODataService.dll</HintPath>
@@ -209,47 +250,6 @@
     <Reference Include="../packages/NewPlatform.Flexberry.UserSettingsService.2.0.0/lib/net35/UserSettingsService">
       <HintPath>../packages/NewPlatform.Flexberry.UserSettingsService.2.0.0/lib/net35/UserSettingsService.dll</HintPath>
     </Reference>
-    <Reference Include="System">
-      <HintPath>System</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>System.Data</HintPath>
-    </Reference>
-    <Reference Include="System.Core">
-      <HintPath>System.Core</HintPath>
-    </Reference>
-    <Reference Include="System.Web">
-      <HintPath>System.Web</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Extensions">
-      <HintPath>System.Web.Extensions</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>System.Net.Http</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <HintPath>System.Xml.Linq</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <HintPath>System.Drawing</HintPath>
-    </Reference>
-    <Reference Include="System.Xml">
-      <HintPath>System.Xml</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration">
-      <HintPath>System.Configuration</HintPath>
-    </Reference>
-    <Reference Include="System.EnterpriseServices">
-      <HintPath>System.EnterpriseServices</HintPath>
-    </Reference>
-    <ProjectReference Include="../Objects/MyTestApplicationEmber.Objects.csproj">
-      <Project>{125f21c9-6815-43f2-b2af-7740c6ee229c}</Project>
-      <Name>MyTestApplicationEmber.Objects</Name>
-    </ProjectReference>
-    <ProjectReference Include="../BusinessServers/MyTestApplicationEmber.BusinessServers.csproj">
-      <Project>{2aeb5dad-1972-4278-a24f-111f6802eb5e}</Project>
-      <Name>MyTestApplicationEmber.BusinessServers</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties/AssemblyInfo.cs" />
